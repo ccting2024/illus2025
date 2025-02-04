@@ -13,6 +13,8 @@
     bannerTimer = setInterval(bannerSwitcher, 5000)
   });
 
+  
+
 
 ///// Anchor Smooth Scroll /////
 //   $('.main-menu a, .learn-more-button a').click(function(e){

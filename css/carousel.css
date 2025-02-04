@@ -168,11 +168,39 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 15px;
-    width: 15px;
-    border-radius: 10px;
-    background: #fff;
+    height: 16px;
+    width: 16px;
+    border-radius: 5px;
+    background: #654e4e;
     z-index: 100;
+}
+@media (min-width:768px) {
+    #banner .content-slider nav .controls label .progressbar,
+#sbanner .content-slider nav .controls label .progressbar,
+#tbanner .content-slider nav .controls label .progressbar,
+#fbanner .content-slider nav .controls label .progressbar,
+#fibanner .content-slider nav .controls label .progressbar,
+#sibanner .content-slider nav .controls label .progressbar,
+#sebanner .content-slider nav .controls label .progressbar,
+#ebanner .content-slider nav .controls label .progressbar{
+
+    height: 24px;
+    width: 24px;
+    border-radius: 8px;
+    background: #654e4e;
+    z-index: 100;
+}
+#banner .content-slider nav .controls label,
+#sbanner .content-slider nav .controls label,
+#tbanner .content-slider nav .controls label,
+#fbanner .content-slider nav .controls label,
+#fibanner .content-slider nav .controls label,
+#sibanner .content-slider nav .controls label,
+#sebanner .content-slider nav .controls label,
+#ebanner .content-slider nav .controls label{
+    width: 6%;
+    padding-top: 1.5em;
+}
 }
 
 #banner .content-slider nav .controls label .progressbar .progressbar-fill,

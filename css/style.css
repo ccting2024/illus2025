@@ -28,6 +28,7 @@ body {
     padding: 2vw 10vw;
 }
 
+
 /* 重置標題 */
 h1,
 h2,
@@ -88,7 +89,21 @@ header {
     opacity: 0.3;
     transition: .35s;
 }
+@media (min-width:768px) {
+    .navbar {
+        display: flex;
+    }
+    .menu {
+       display: flex;
+    }
+    /* 為什麼不行？？ */
+    .menu li a {
+padding: 10px;
+width: 5vw;
+    }
 
+
+}
 .menu li {
     display: flex;
     justify-content: center;
@@ -184,24 +199,35 @@ header {
 
 /* 年輪區 */
 .growthrings {
-    width: 240vw;
-    height: 115vh;
+    width: 258vw;
+    height: 75vh;
     position: absolute;
     background: url('../picture/growthrings.png');
     background-repeat: no-repeat;
     background-size: cover;
     left: -680px;
-    top: 500px;
+    top: 800px;
+    z-index: -1;
 }
-
+@media (min-width:768px){
+.growthrings {
+    opacity: .5;}
+}
 #gt2 {
-    width: 207vw;
-    height: 100vh;
+    width: 215vw;
+    height: 65vh;
     left: -500px;
-    top: 1700px;
+    top: 1920px;
     transform: rotate(180deg) scaleX(-1);
 }
 
+#gt3 {
+    width: 105vw;
+    height: 30vh;
+    left: 45px;
+    top: 8710px;
+    transform: rotate(90deg) scaleX(-1);
+}
 /* 前言區 */
 #shysay {
     margin: 600px 0 700px 120px;
@@ -228,10 +254,14 @@ header {
 }
 /* 作品區 */
 
-.pictures h2 {
-    margin-bottom: 40px;
-    background: #156551;
+#pictures .ps {
+  color: #654e4e;
+  font-size: 20px;
+  letter-spacing: .04em;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
+
 
 .textbox {
 display:inline-flex;
@@ -297,7 +327,74 @@ margin: 42px 0 22px 0;
     height: 460px;
     margin-bottom: 20px;
 }
+@media (min-width:768px) {
+    #banner .content-slider .slider ,
+#fbanner .content-slider .slider,
+#sibanner .content-slider .slider{
+    height: 500px;
+    margin-bottom: 20px;
+}
+#sbanner .content-slider .slider ,
+#tbanner .content-slider .slider ,
+#fibanner .content-slider .slider,
+#sebanner .content-slider .slider,
+#ebanner .content-slider .slider {
+    height: 600px;
+    margin-bottom: 20px;
+}
+}
 
+/* 關於畫者 */
 #about {
 margin-bottom: 50px;
+margin-top: 400px;
+}
+#about h2 {
+    margin-bottom: 40px;
+}
+#about .thing {
+    
+    background-size: cover;
+}
+
+#about .thingbox {
+    display: inline;
+    
+}
+#about .thingbox div{
+    width: 40vw;
+    margin-bottom: 30px;
+}
+#about h3 {
+    font-size: 1.4em;
+    letter-spacing: .13em;
+    font-weight: 300;
+}
+#about h5{
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: .1em;
+    color: #654e4e;
+    margin: 15px 0 5px 0;
+    
+}
+#about a {
+    font-size: .9em;
+    font-weight: 300;
+    letter-spacing: .1em;
+    color: #141414;
+    margin: 5px 0 5px 0;
+    
+}
+.slider {
+    transition: transform 0.5s ease;
+}
+footer {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: .8em;
+    font-weight: 300;
+    letter-spacing: .1em;
+    opacity:.5;
 }
