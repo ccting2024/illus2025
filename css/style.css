@@ -89,21 +89,7 @@ header {
     opacity: 0.3;
     transition: .35s;
 }
-@media (min-width:768px) {
-    .navbar {
-        display: flex;
-    }
-    .menu {
-       display: flex;
-    }
-    /* 為什麼不行？？ */
-    .menu li a {
-padding: 10px;
-width: 5vw;
-    }
 
-
-}
 .menu li {
     display: flex;
     justify-content: center;
@@ -121,6 +107,31 @@ width: 5vw;
     font-weight: 500;
 }
 
+
+
+@media (min-width:768px) {
+    .bar{
+        font-size: 28px;
+    }
+    .navbar {
+        display: flex;
+    }
+    .menu {
+        display: flex;
+    }
+    .menu li a {
+        padding: 10px 0;
+        width: 10vw;
+        display: inline-flex;
+        justify-content: center;
+    }
+    .menu li a div {
+        font-size: 28px;
+        padding: 0 6px;
+        font-weight: 500;
+    }
+
+}
 /* 預設隱藏選單 */
 .navigation {
     opacity: 0.2;
